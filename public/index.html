@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos DB Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-section">
+            <h1 id="form-title">My Recipe Book</h1>
+            <p>Powered by Azure Cosmos DB</p>
+            <form id="recipe-form">
+                <input type="text" id="name-input" placeholder="Recipe Name" required>
+                <input type="text" id="course-input" placeholder="Course (e.g., Main, Dessert)" required>
+                <textarea id="ingredients-input" placeholder="Ingredients (one per line)" required rows="4"></textarea>
+                <textarea id="instructions-input" placeholder="Instructions" required rows="6"></textarea>
+                <div class="form-buttons">
+                    <button type="submit" id="submit-btn">Add Recipe</button>
+                    <button type="button" id="cancel-edit-btn" class="hidden">Cancel Edit</button>
+                </div>
+            </form>
+        </section>
+        <section class="list-section">
+            <h2>All Recipes</h2>
+            <div id="recipe-list">
+                <!-- Recipes will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
